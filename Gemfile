@@ -9,8 +9,6 @@ gem 'jquery-rails'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-
 
 group :development, :test do
   gem 'sqlite3'
@@ -18,6 +16,7 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'guard-spork'  
   gem 'spork'
+  gem 'sqlite3'
 end
 
 group :production do
