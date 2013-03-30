@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
+gem 'bootstrap-sass'
 gem 'bootstrap'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'jquery-rails'
-
+gem 'thor'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

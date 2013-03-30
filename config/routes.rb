@@ -1,4 +1,10 @@
 Speaktwice::Application.routes.draw do
+  
+  root  to: "pages#home"
+  match '/japanese',to: 'pages#japanese'
+  match '/about',   to: 'pages#about'
+  match '/add',     to: 'pages#add'
+  match '/english',  to: 'pages#home'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
