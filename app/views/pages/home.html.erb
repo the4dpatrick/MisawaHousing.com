@@ -18,8 +18,37 @@
 		<h2>Record yourself asking, “Are you afraid of flying?”</h2>
 		<div class= "well span5">
 			<div class = "star"><%= image_tag "star grey.png", mouseover: "star hover.png"%></div>
-			<div class = "record"><%= image_tag "record.png", mouseover: "record-hover.png"
-									%></div>
+			<div id="locationforrecorder"></div>
+				<script>
+
+				   $.jRecorder(
+
+				     { 
+				        host : 'localhost:3000/acceptfile.php?filename=hello.wav' ,
+
+				        callback_started_recording:     function(){callback_started(); },
+				        callback_stopped_recording:     function(){callback_stopped(); },
+				        callback_activityLevel:          function(level){callback_activityLevel(level); },
+				        callback_activityTime:     function(time){callback_activityTime(time); },
+
+				        callback_finished_sending:     function(time){ callback_finished_sending() },
+
+
+				        swf_path : '/jRecorder.swf',
+
+				     }
+
+				    , $('#locationforrecorder')
+
+
+				   );
+
+
+
+				   </script>
+				<input type="button" id="record" value="Record" style="color:red">
+				<input type="button" id="stop" value="Stop">
+									
 		</div>
 	</div>	
 
@@ -27,8 +56,9 @@
 		<h3>Try recording again?</h3>
 		<div class= "well span5">
 			<div class = "star"><%= image_tag "star grey.png", mouseover: "star hover.png"%></div>			
-			<div class = "record"><%= image_tag "record.png", mouseover: "record-hover.png"
-									%></div>
+			<input type="button" id="record" value="Record" style="color:red">
+			<input type="button" id="stop" value="Stop">
 		</div>
 	</div>
 </div>
+
