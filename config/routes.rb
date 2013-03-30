@@ -1,5 +1,4 @@
 Speaktwice::Application.routes.draw do
-  
   root  to: "pages#home"
   match '/japanese',to: 'pages#japanese'
   match '/about',   to: 'pages#about'
