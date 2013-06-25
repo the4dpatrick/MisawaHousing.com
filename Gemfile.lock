@@ -58,7 +58,7 @@ GEM
     guard-rspec (3.0.2)
       guard (>= 1.8)
       rspec (~> 2.13)
-    guard-spork (1.5.0)
+    guard-spork (1.5.1)
       childprocess (>= 0.2.3)
       guard (>= 1.1)
       spork (>= 0.8.4)
@@ -77,8 +77,6 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    memcache-client (1.8.5)
-    memcached-northscale (0.19.5.4)
     method_source (0.8.1)
     mime-types (1.23)
     multi_json (1.7.7)
@@ -166,8 +164,6 @@ DEPENDENCIES
   guard-rspec
   guard-spork
   jquery-rails
-  memcache-client
-  memcached-northscale
   pg
   rails
   rspec-rails
