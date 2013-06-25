@@ -1,0 +1,52 @@
+<script type="text/javascript">
+	mixpanel.track('Land on contact page')
+</script>
+<div id="contact">
+	<div class="container">
+		<div class="number">
+			<h1>Call Us</h1>
+			</br>
+			<p>Local Japanese number: 080-4058-5771</p>
+			<p>From US: 81-011-8180-4058-5771</p><br/>
+			<p style="text-align: center; color: red; font-size: 30px; padding-bottom: 10px">or</p>
+		</div>
+	</div>
+	<div class="email">
+		<div class="container">
+			<h2>E-mail us</h2>
+			<%= form_for @message, :url => contact_path do |form| %>
+			  <fieldset class="fields">
+			    <div class="field">
+			      <%= form.label :name %>
+			      <%= form.text_field :name, class: "small-input" %>
+			    </div>
+ 
+			    <div class="field">
+			      <%= form.label :email %>
+			      <%= form.text_field :email, class: "small-input" %>
+			    </div>
+			    <div class="field">
+			      <%= form.label :subject %>
+			      <%= form.text_field :subject, class: "small-input" %>
+			    </div>
+ 
+			    <div class="field">
+			      <%= form.label :body %>
+			      <%= form.text_area :body, class: "input" %>
+			    </div>
+			  </fieldset>
+		</div>
+	</div>
+</div>
+<div id ="button">
+	<div class="container">
+		<fieldset class="actions">
+	    <%= form.submit "Send", class: "btn btn-large btn-primary span8"%>
+			<script type="text/javascript">
+				mixpanel.track_links("#id a", "Sent Email")
+			</script>
+	  </fieldset>
+	</div>
+</div>
+<% end %>
+

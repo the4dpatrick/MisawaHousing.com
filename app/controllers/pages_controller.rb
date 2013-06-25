@@ -2,15 +2,10 @@ class PagesController < ApplicationController
   def home
   end
   
-  def english
+  def info
   end
 
-  def about
-  end
 
-  def add
-  end
-  
-  def japanese
+  def privacy
   end
 end

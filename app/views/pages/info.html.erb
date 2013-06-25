@@ -1,0 +1,26 @@
+<script type="text/javascript">
+	mixpanel.track('Land on info page')
+</script>
+<div id="info">
+	<div class="container">
+	<h1>Information</h1><br/>
+	<p>Monthly rent ranges from 60,000 yen - 200,000 yen, but negotiable based on your Overseas Housing Allowance.</p>
+	<p>Give us a call and we can set up a tour for you today. If you are unable to drive to our location, then we can pick you up either at the main or POL gate. Once the tour is done, we can drop you off at either gates as well.</p> 
+	<p>Tours can be scheduled to fit with your schedule, but we recommend setting aside half or a whole day to see many different houses. Tours can be scheduled between 0900-1600.</p>
+	<p>After a tour with one of our partners, we will continue another tour with another partner if time permits</p>
+	<p>Questions? Contact us</p>
+	<% if ab_test "or dinner" %>
+		<%= link_to "Contact Us", contact_path, class: "btn btn-large btn-primary span3", style: "margin: 0 auto"%>
+	<% end %>
+	</div>
+</div>
+<% if ab_test "or dinner" %>
+	<%= render 'pages/or_guarantee' %>
+<% else ab_test "no dinner" %>
+	<% nil %>
+<% end %>
+<div id="button">
+	<div class="container">
+		<%= link_to "Contact Us", contact_path, class: "btn btn-large btn-primary span8"%>
+	</div>
+</div>

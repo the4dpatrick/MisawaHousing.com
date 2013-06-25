@@ -1,18 +1,8 @@
-<header class="navbar navbar-static-top">
+<header class="navbar navbar-fixed-top">
   <div class="navbar-inner">
 	<div class= "pull-left"; id= "logo">
-      <%= link_to image_tag("logo.png"), english_path, alt: "SpeakTwice"%>
+      <%= link_to image_tag("logo.png"), root_path, alt: "Home" %>
+	  <%= link_to "Misawa Off-Base Housing", root_path, alt: "Home" %>
 	</div>
-      <nav>
-        <ul class="nav pull-right">
-		  <li class="divider-vertical"></li>
-		  <li><%= link_to "English Phrase", english_path %></li>
-		   <li class="divider-vertical"></li>
-		  <li><%= link_to "Japanese Phrase", japanese_path %></li>
-		   <!-- <li class="divider-vertical"></li>				
-          <li><%= link_to "About", about_path %></li>
-          <li><%= link_to "Add a Phrase", add_path %></li> -->
-        </ul>
-      </nav>
   </div>
 </header>

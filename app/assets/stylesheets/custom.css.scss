@@ -1,60 +1,225 @@
 @import "bootstrap";
 
 #logo {
+	padding-left: 20px;
+	padding-right: 20px;
 	padding-top: 5px;
+	padding-bottom: 10px;
+	a {
+		font-family: sans-serif, Arial;
+		font-style: normal;
+		color: black;
+		font-size: 25px;
+		padding-left: 5px;
+	}
 }
-
 
 h1 {
-padding-top: 0px;
-padding-bottom: 0px;
-padding-left: 20px;
-font-size: 1.5em;
-text-align: left;
-float: left;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 60px;
+	line-height: 50px;
+	text-align: center;
 }
 
-h4 {
-	padding-top: 10px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 307px;
-	font-size: 1.5em;
-	text-align: left;
-	float: right;
-}
-
-h2, h3 {
-	padding-top: 0px;
-	padding-bottom: 0px;
-	padding-left: 20px;
-	font-weight: normal;
-	font-size: 1.2em;
-	text-align: left;
-}
-
-
-well {
-	width: 50;
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
-
-.star {
-	float: right;
-}
-
-.record {
+h2 {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 20px;
 	text-align: center;
 }
 
 p {
-	font-size: 15pt;
-	line-height: 18pt;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 25px;
 }
 
-.audio {
+/* main */
+
+#main {
+	padding-top: 100px;
+	min-height: 500px;
 	text-align: center;
+	
+	/* Background image */
+	background: #f6f6f6 url(house.png) no-repeat center top;
+	width: 100%;
+	display: table;
+	
+	/* Header */
+	h1 {
+		line-height: 60px;
+		text-align: center;
+		color: yellow;
+		text-shadow: 0px 2px 15px black;
+	}
+	
+	/* Home-info blurred white */
+	.home-info {
+		width: 100%;
+		background-color: rgba(246, 246, 246, 0.7);
+		box-shadow: 0px 0px 20px #f6f6f6;
+		padding-bottom: 30px;
+		
+		p {
+			padding-top: 10px;
+			width: 800px;
+			margin: 0 auto;
+			float: none;
+			text-align: left;
+			line-height: 30px;
+			text-indent: 50px;
+		}
+	}
+	
+	
 }
 
+/* guarantee */
 
+#guarantee {
+	padding-top: 30px;
+	min-height: 200px;
+	text-align: center;
+	background-color: #48bad6;
+	width: 100%;
+	box-shadow: 0px -1px 10px gray;
+	box-shadow: 0px 2px 10px gray;
+}
+
+/* button */
+
+#button {
+	width: 100%;
+	background-color: #d1d1d1;
+	.container {
+		width: 725px;
+		min-height: 45px;
+		padding-top: 20px;
+		padding-bottom: 20px;	
+		margin: 0 auto;
+		float: none;
+		text-align: center;
+	}
+}
+
+/* footer */
+
+footer {
+padding-top: 5px;
+
+small {
+    float: left;
+	padding-left: 10px;
+  }
+ul {
+	float: right;
+	padding-right: 10px;
+} }
+
+/* info */
+
+#info {
+	min-height: 200px;
+	background-color: white;
+	padding-bottom: 30px;
+	padding-top: 75px;
+}
+
+/*contact*/
+
+#contact {
+	.container {
+	min-height: 100px;
+	background-color: #fff;
+	padding-top: 50px;
+		.number {
+			padding-top: 40px;
+			padding-bottom: 10px;
+			font-weight: bold;
+			text-align: center;
+			font-size: 100px;
+			text-shadow: 2px 1px 0px gray;
+		}
+	}
+	.email {
+		width: 100%;
+		background-color: #d64848;
+		box-shadow: 0px -1px 10px gray;
+		.container {
+			background-color: #d64848;
+			width: 675px;
+			padding-left: 30px;
+			padding-right: 30px;
+			float: none;
+			margin: 0 auto;
+			h2 {
+				font-weight: bold;
+				font-size: 50px;
+				text-align: center;
+				padding-bottom: 20px;
+				color: white;
+			}
+			.field {
+				width: 700px;
+
+				.small-input {
+					width: 300px;
+				}
+
+				.input {
+					width: 650px;
+				}
+			}
+			label {
+				color: white;
+			}
+		}
+	}	
+}
+
+/*reviews*/
+
+#reviews {
+	background-color: #d6a648;
+	width: 100%;
+	box-shadow: 0px -1px 10px gray;
+	box-shadow: 0px 1px 10px gray;
+	.row {
+		width: 900px;
+		margin: 0 auto;
+		float: none;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin: 0 auto;
+		float: none;
+		text-align: center;
+		
+		.span {
+			width: 275px;
+		}
+
+		.thumbnail {
+			border: dotted 2px;
+		}
+	}
+	
+}
+
+/* Privacy Policy */
+
+#privacy {
+	padding-top: 100px;
+	background-color: gray;
+	.container {
+		padding: 20px;
+		width: 850px;
+		background-color: white;
+		box-shadow: 0px 0px 10px white;
+	}
+}

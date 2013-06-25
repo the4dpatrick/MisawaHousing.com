@@ -1,10 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails'
+
 gem 'bootstrap-sass'
 gem 'bootstrap'
-gem 'will_paginate'
-gem 'bootstrap-will_paginate'
 gem 'jquery-rails'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -21,6 +20,8 @@ end
 
 group :production do
   gem 'pg'
+  gem 'memcache-client'
+  gem 'memcached-northscale', :require => 'memcached'
 end
 
 # Gems used only for assets and not required
@@ -36,6 +37,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

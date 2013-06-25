@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Speaktwice::Application.load_tasks
+Housing::Application.load_tasks
