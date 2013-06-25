@@ -68,7 +68,9 @@ Housing::Application.configure do
   # Mixpanel token
    MIXPANEL_TOKEN = "b8fd50f7024ec7ee8fa723148d9aa462".freeze
    
-   ## Use a different cache store in production
-   # config.cache_store = :mem_cache_store
-   config.cache_store = :mem_cache_store, Memcached::Rails.new
+   config.cache_store = :dalli_store
+   
+   #Object cache
+   require 'active_support/cache/dalli_store23'
+   config.cache_store = :dalli_store
 end
