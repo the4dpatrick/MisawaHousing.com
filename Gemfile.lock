@@ -43,7 +43,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
-    dalli (2.6.4)
     diff-lcs (1.2.4)
     erubis (2.7.0)
     execjs (1.4.0)
@@ -162,7 +161,6 @@ DEPENDENCIES
   bootstrap
   bootstrap-sass
   coffee-rails (~> 3.2.1)
-  dalli
   guard-rspec
   guard-spork
   jquery-rails

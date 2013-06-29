@@ -14,6 +14,7 @@
 	<div class="email">
 		<div class="container">
 			<h2>E-mail us</h2>
+			<p style="text-align: center; color: white; font-size: 20px; padding-bottom: 10px">Info@MisawaHousing.com</p>
 			<%= form_for @message, :url => contact_path do |form| %>
 			  <fieldset class="fields">
 			    <div class="field">
@@ -43,7 +44,7 @@
 		<fieldset class="actions">
 	    <%= form.submit "Send", class: "btn btn-large btn-primary span8"%>
 			<script type="text/javascript">
-				mixpanel.track_links("#id a", "Sent Email")
+				mixpanel.track_links("#button a", "Sent Email")
 			</script>
 	  </fieldset>
 	</div>

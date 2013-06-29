@@ -67,10 +67,5 @@ Housing::Application.configure do
   
   # Mixpanel token
    MIXPANEL_TOKEN = "b8fd50f7024ec7ee8fa723148d9aa462".freeze
-   
-   config.cache_store = :dalli_store
-   
-   #Object cache
-   require 'active_support/cache/dalli_store23'
-   config.cache_store = :dalli_store
+
 end
