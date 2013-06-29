@@ -1,16 +1,9 @@
 <div id="main">
 	<div class="top container">
-		<% if ab_test "or dinner"%>
-			<h1>Find your new home<br/>or<br/>Dinner is on us!</h1><br/>
-			<script type="text/javascript">
-				mixpanel.track('Land on landing page', {'Dinner Test' : 'or'});
-			</script>
-		<% else ab_test "no dinner" %>
-			<h1>Find your new<br/>off-base home</h1>
-			<script type="text/javascript">
-				mixpanel.track('Land on landing page', {'Dinner Test' : 'None'});
-			</script>
-		<% end %>
+		<h1>Find your new<br/>off-base home</h1>
+		<script type="text/javascript">
+			mixpanel.track('Land on landing page', {'Dinner Test' : 'None'});
+		</script>
 		<div class="home-info">
 			<p>We've helped dozens military personnel new to Misawa Air Force base find their off-base home when they first arrive here in Japan. From single airmen looking for a small apartment, to families needing a lot of space, we can help you find the house to fit your needs.</p><br/>
 			<p>We work with our numerous partners to give you a more varied selection. See the full range of what Misawa homes has to offer.</p> <br/><%= link_to "Learn More", info_path, class: "btn btn-large btn-primary span4", style: "float: none; padding: 10px;" %>
