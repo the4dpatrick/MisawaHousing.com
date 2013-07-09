@@ -6,15 +6,15 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://misawahousing.com/</loc>
+  <loc>http://www.misawahousing.com/</loc>
 </url>
 <url>
-  <loc>http://misawahousing.com/info</loc>
+  <loc>http://www.misawahousing.com/info</loc>
 </url>
 <url>
-  <loc>http://misawahousing.com/privacy</loc>
+  <loc>http://www.misawahousing.com/privacy</loc>
 </url>
 <url>
-  <loc>http://misawahousing.com/contact</loc>
+  <loc>http://www.misawahousing.com/contact</loc>
 </url>
 </urlset>
