@@ -5,6 +5,7 @@ gem 'rails'
 gem 'bootstrap-sass'
 gem 'bootstrap'
 gem 'jquery-rails'
+gem 'pony'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

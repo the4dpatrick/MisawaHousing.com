@@ -2,9 +2,12 @@ Housing::Application.routes.draw do
   root  to: "pages#home"
   match '/info',to: 'pages#info'
   match '/privacy',     to: 'pages#privacy'
+  match '/contact',    to: 'contact#new'
+  match '/contacts',  to: 'contact#create'
   
-  match 'contact' => 'contact#new', :as => 'contact', :via => :get
-  match 'contact' => 'contact#create', :as => 'contact', :via => :post
+  resources :contact, :only => [:new, :create] do
+    get 'thank_you', :on => :collection
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

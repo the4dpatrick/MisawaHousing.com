@@ -58,19 +58,6 @@ module Housing
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
-    
-    config.action_mailer.smtp_settings = {
-      :address              => "smtp.1and1.com",
-      :port                 => 587,
-      :domain               => "misawahousing.com",
-      :user_name            => "noreply@misawahousing.com",
-      :password             => "Misawano",
-      :authentication       => :plain,
-      :enable_starttls_auto => true
-    }
 
-    config.action_mailer.default_url_options = {
-      :host => "misawahousing.com"
-    }
   end
 end
